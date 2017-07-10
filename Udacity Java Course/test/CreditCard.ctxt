@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.params=cardNumber
+comment0.target=CreditCard(long)
+comment1.params=
+comment1.target=boolean\ isValid()
+comment1.text=\n\ Calculates\ whether\ this\ CreditCard\ has\ a\ valid\ number.\n\ @return\ true\ if\ the\ number\ is\ valid,\ false\ if\ it's\ not.\n
+comment2.params=
+comment2.target=int\ sumCertainDigits()
+comment2.text=\n\ Calculates\ the\ sum\ of\ ever\ other\ digit\ in\ cardNumber\ \n\ starting\ from\ the\ rightmost\ digit.\n\ @return\ the\ sum\ of\ every\ other\ digit\ starting\ from\ the\ rightmost.\n
+numComments=3
