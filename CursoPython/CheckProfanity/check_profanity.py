@@ -1,0 +1,23 @@
+import urllib
+
+def read_text():
+    quotes = open ("/Users/Js/Desktop/Arquivos pessoais de Cursos/CursoPython/CheckProfanity/movie_quotes.txt")
+    contents_of_file = quotes.read ()
+    print (contents_of_file)
+    quotes.close()
+    check_profanity(contents_of_file)
+
+def check_profanity (text_to_check):
+    connection = urllib.urlopen ("http://www.wdylike.appspot.com/?q=shot"+text_to_check)
+    output = connection.read()
+    #print(output)
+    connection.close()
+    if "true" in output:
+        print("PROFANITY ALERT!")
+    elif "false" in output:
+        print("You're safe.")
+    else:
+        print ("Could not scan the text properly.")
+
+    
+read_text()
